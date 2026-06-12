@@ -312,9 +312,9 @@ col_left, col_right = st.columns([1, 1.6], gap="large")
 # ══ 왼쪽: 등록 ══════════════════════════════════════════════
 with col_left:
     st.markdown('<div class="section-title">📋 시트 등록</div>', unsafe_allow_html=True)
-    new_name     = st.text_input("시트 이름", placeholder="예) 2024 마케팅 예산")
+    new_name     = st.text_input("시트 이름", placeholder="예) 2026 마케팅 예산")
     new_url      = st.text_input("구글 시트 URL", placeholder="https://docs.google.com/spreadsheets/d/...")
-    new_tags_raw = st.text_input("태그 (쉼표 구분)", placeholder="예) 마케팅, 예산, 2024")
+    new_tags_raw = st.text_input("태그 (쉼표 구분)", placeholder="예) 마케팅, 예산, 2026")
     new_desc     = st.text_input("간단한 설명 (선택)", placeholder="예) Q1~Q4 마케팅 비용 정리")
 
     c1, c2 = st.columns(2)
