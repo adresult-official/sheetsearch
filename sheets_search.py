@@ -445,7 +445,7 @@ with col_right:
         if not sheets_data:
             st.markdown('<div style="text-align:center;padding:3rem 0;color:#888"><div style="font-size:2.5rem">📭</div><p>등록된 시트가 없어요</p></div>', unsafe_allow_html=True)
         else:
-            sheet_names = [s["name"] for s in sheets_data]
+            sheet_names = sorted([s["name"] for s in sheets_data])
             selected_sheet = st.selectbox("시트 선택", sheet_names)
             selected = next((s for s in sheets_data if s["name"] == selected_sheet), None)
 
